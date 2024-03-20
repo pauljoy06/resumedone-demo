@@ -135,7 +135,7 @@
 
     .personal-information-form {
         display: grid;
-        grid-template-rows: 56px 16px 56px 16px 56px 16px 56px 16px 56px;
+        grid-template-rows: 42px 23px 42px 23px 42px 23px 42px 23px 42px;
         grid-template-columns: minmax(100px, 310px)
             24px
             minmax(100px, 310px)
@@ -281,7 +281,7 @@ button {
         padding: 0px 10px;
 
         font-weight: 400;
-        font-size: 0.95em;
+        font-size: 11px;
 
         cursor: default;
         background-color: #fff;

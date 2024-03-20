@@ -60,7 +60,7 @@ const PersonalInformation = () => {
                 <Input label='Email'/>  
             </div>
             <div className='phone'>
-                <Input label='phone'/>  
+                <Input label='Phone'/>  
             </div>
             <div className='password'>
                 <Input label='Password'/>  
