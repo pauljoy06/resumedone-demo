@@ -10,6 +10,9 @@ function App() {
         <Sidebar />
         <div className='main-section'>
             <PremiumAccountBanner />
+            <PersonalInformation />
+            <MiscActions />
+            <Footer />
         </div>
     </div>
   );
@@ -28,6 +31,24 @@ const PremiumAccountBanner = () => {
                 You have a premium account, granting you access to all the remarkable features offered by ResumeDone. With this privilege, you can indulge in the freedom of downloading an unlimited number of resumes and cover letters in both PDF and Word formats. 
             </div>
         </div>
+    </div>
+}
+
+const PersonalInformation = () => {
+    return <div className='personal-information'>
+       Peronsal Information 
+    </div>
+}
+
+const MiscActions = () => {
+    return <div className='misc-actions'>
+        Misc Actions 
+    </div>
+}
+
+const Footer = () => {
+    return <div className='footer'>
+       Footer
     </div>
 }
 
