@@ -48,7 +48,24 @@ const MiscActions = () => {
 
 const Footer = () => {
     return <div className='footer'>
-       Footer
+        <div className='feedback-request'>
+            <a>Get in touch with our support team</a> if you have any question or want to leave some feedback.
+            We’ll be happy to hear from you. 
+        </div>
+        <div className='main-footer'>
+            <div className='terms'>
+                Terms & Conditions 
+            </div>
+            <div className='privacy-policy'>
+                Privacy Policy 
+            </div>
+            <div className='faq'>
+                FAQ 
+            </div>
+            <div className='contact-us'>
+                Contact Us 
+            </div>
+        </div>
     </div>
 }
 

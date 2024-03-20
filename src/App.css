@@ -1,3 +1,8 @@
+:root {
+    --dark-text: #4C4C55;
+    --light-text: #595964;
+}
+
 .App {
     display: grid;
     grid-template-rows: 100vh;
@@ -75,11 +80,10 @@
 .main-section {
     grid-area: main-section;
     display: flex;
+    gap: 32px;
     flex-direction: column;
     
     padding: 32px 80px;
-    
-    background-color: blue;
 }
 
 .premium-account-banner {
@@ -127,8 +131,20 @@
 }
 
 .footer {
-    background-color: green;
     margin-top: auto;
+
+    .feedback-request {
+        margin-bottom: 16px;
+    }
+    .main-footer {
+        display: flex;
+        gap: 32px;
+
+        padding-top: 16px;
+        
+        border-top: 1px solid #E3E3E4;
+        color: var(--light-text);
+    }
 }
 
 a {
