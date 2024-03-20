@@ -34,10 +34,6 @@
         width: 100%;
 
         border-bottom: 1px solid #ECECED;
-        .name {
-            display: flex;
-            align-items: center;
-        }
     }
 
     .sidebar-items {

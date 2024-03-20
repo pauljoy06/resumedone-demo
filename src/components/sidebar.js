@@ -2,7 +2,7 @@ import React from 'react';
 
 import {Icon} from './index';
 
-import logo from '../icons/paul.jpeg';
+import logo from '../icons/logo.png';
 import search from '../icons/search.svg';
 import myTemplate from '../icons/my_template.svg';
 import star from '../icons/star.png';
@@ -116,10 +116,7 @@ const Sidebar = (props) => {
 
     return <div className='sidebar'>
         <div className='name-logo-section'>
-            <Icon image={logo} size={40}/> 
-            <div className='name'>
-                Resumizeme
-            </div>
+            <Icon image={logo} height={24} width={115}/> 
         </div>
         <div className='sidebar-items'>
             {sidebarItems.map((sidebarItem, index)=> <SidebarItem
