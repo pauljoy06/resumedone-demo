@@ -12,13 +12,16 @@
         'sidebar            main-section'
         'sidebar            main-section'
      ;
+
+     color: var(--dark-text);
 }
 
 .sidebar {
     grid-area: sidebar;
     display: flex;
     flex-direction: column;
-
+        
+    border-right: 1px solid #ECECED;
     .name-logo-section {
         display: flex;
         gap: 10px;
@@ -27,6 +30,7 @@
         height: max-content;
         width: 100%;
 
+        border-bottom: 1px solid #ECECED;
         .name {
             display: flex;
             align-items: center;
@@ -55,7 +59,6 @@
             margin-left: auto;
         }
     }
-
 }
 
 .sidebar-item {
@@ -127,7 +130,35 @@
 }
 
 .misc-actions {
-    background-color: yellow;
+    .hirethebest-checkbox {
+        display: flex;
+        gap: 5px;
+        margin-bottom: 32px;
+        .square {
+            width: 16px;
+            height: 16px;
+
+            border-radius: 2px;
+            border: 2px solid #C4C4C7;
+        }
+    }
+    .delete-account {
+        padding: 16px;
+        
+        border: 1px solid #E3E3E4;
+        .delete-account-heading {
+            color: #000;
+            font-size: 17px;
+        }
+        .delete-account-text {
+            margin-top: 8px;
+        }
+        .delete-account-button {
+            margin-top: 16px;
+            
+            color: #F25773;
+        }
+    }
 }
 
 .footer {
@@ -148,5 +179,15 @@
 }
 
 a {
-    color: #61dafb;
+    color: #1688FE;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }

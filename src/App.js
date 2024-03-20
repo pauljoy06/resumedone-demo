@@ -42,7 +42,26 @@ const PersonalInformation = () => {
 
 const MiscActions = () => {
     return <div className='misc-actions'>
-        Misc Actions 
+        <div className='hirethebest-checkbox'>
+            <div className='square'>
+                
+            </div>
+            <div className='checkbox-text'>
+                Show my profile to serious employers on <a>hirethesbest.io</a> for free 
+            </div>
+        </div>
+        <div className='delete-account'>
+            <div className='delete-account-heading'>
+                Delete account 
+            </div>
+            <div className='delete-account-text'>
+                If you delete your account you’ll be permanently removing it
+                from our systems - you can’t undo it. 
+            </div>
+            <button className='delete-account-button'>
+               Yes, Delete my account 
+            </button>
+        </div>
     </div>
 }
 
