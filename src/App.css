@@ -7,10 +7,6 @@
         'sidebar            main-section'
         'sidebar            main-section'
      ;
-
-    
-
-    background-color: black;
 }
 
 .sidebar {
@@ -18,7 +14,6 @@
     display: flex;
     flex-direction: column;
 
-    background-color: red;
     .name-logo-section {
         display: flex;
         gap: 10px;
@@ -27,7 +22,6 @@
         height: max-content;
         width: 100%;
 
-        background-color: aqua;
         .name {
             display: flex;
             align-items: center;
@@ -60,8 +54,6 @@
 }
 
 .sidebar-item {
-    background-color: lightblue;
-
     .main-item, .sub-item {
         display: flex;
         align-items: center;
