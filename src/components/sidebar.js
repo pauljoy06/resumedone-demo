@@ -122,10 +122,11 @@ const Sidebar = (props) => {
             </div>
         </div>
         <div className='sidebar-items'>
-            {sidebarItems.map(sidebarItem => <SidebarItem
+            {sidebarItems.map((sidebarItem, index)=> <SidebarItem
                 name={sidebarItem.name}
                 image={sidebarItem.image}
                 subItems={sidebarItem.subItems}
+                key={index}
             />)}
         </div>
         <div className='user-settings'>
@@ -149,9 +150,10 @@ const SidebarItem = (props) => {
             name={props.name}
         />
         {props.subItems && <div className='sub-items'>
-            {props.subItems.map(subItem => <SubItem
+            {props.subItems.map((subItem, index)=> <SubItem
                 name={subItem.name}
                 type={subItem.type}
+                key={index}
             />)} 
         </div>}
     </div>
