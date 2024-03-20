@@ -1,11 +1,14 @@
 import logo from './icons/paul.jpeg';
 import './App.css';
-import {Icon, TestComp} from './components';
+import {Icon, Sidebar} from './components';
 
 function App() {
   return (
     <div className='App'>
-        <Icon image={logo} size={50} />
+        <Sidebar />
+        <div className='main-section'>
+            Main Right Section
+        </div>
     </div>
   );
 }

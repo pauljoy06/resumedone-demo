@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 
+import Sidebar from './sidebar';
 
 function Icon(props) {
     let width, height;
@@ -38,4 +39,5 @@ function Icon(props) {
 
 export {
     Icon,
+    Sidebar,
 }
