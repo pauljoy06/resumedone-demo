@@ -68,6 +68,8 @@
 
         width: 100%;
         padding: 8px 6px;
+
+        font-size: 13px;
         .main-item-name {
             display: flex;
             align-items: center;
@@ -75,7 +77,8 @@
     }
 
     .main-item {
-        font-weight: 500;
+        font-weight: 800;
+        color: #14141F;
     }
 }
 
