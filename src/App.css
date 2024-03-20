@@ -16,8 +16,68 @@
 .sidebar {
     grid-area: sidebar;
     display: flex;
+    flex-direction: column;
 
     background-color: red;
+    .name-logo-section {
+        display: flex;
+        gap: 10px;
+
+        padding: 8px 0 8px 12px;
+        height: max-content;
+        width: 100%;
+
+        background-color: aqua;
+        .name {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .sidebar-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .user-settings {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        padding: 12px;
+        margin-top: auto;
+
+        border-top: 1px solid #ECECED;
+        .user-profile-picture {
+            border-radius: 99px;
+        }
+
+        .settings {
+            margin-left: auto;
+        }
+    }
+
+}
+
+.sidebar-item {
+    background-color: lightblue;
+
+    .main-item, .sub-item {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        width: 100%;
+        padding: 8px 6px;
+        .main-item-name {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .main-item {
+        font-weight: 500;
+    }
 }
 
 .main-section {
