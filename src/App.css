@@ -126,7 +126,71 @@
 
 .personal-information {
     flex-grow: 1;
-    background-color: brown;
+    .personal-information-title {
+        font-size: 24px;
+        color: #14141F;
+    }
+
+    .personal-information-form {
+        display: grid;
+        grid-template-rows: 56px 16px 56px 16px 56px 16px 56px 16px 56px;
+        grid-template-columns: minmax(100px, 310px)
+            24px
+            minmax(100px, 310px)
+            24px
+            minmax(144px, 1fr)
+        ;
+        grid-template-areas:
+            'firstName . lastName . pic'
+            '. . . . pic'
+            'city . postcode . pic'
+            '. . . . .'
+            'address address address . .'
+            '. . . . .'
+            'email . phone . .'
+            '. . . . .'
+            'password . . . .'
+        ;
+
+         margin-top: 16px;
+        
+         .first-name {
+            grid-area: firstName;
+         }
+         .last-name {
+            grid-area: lastName;
+         }
+         .city {
+            grid-area: city;
+         }
+         .postal-code {
+            grid-area: postcode;
+         }
+         .address {
+            grid-area: address;
+         }
+         .email {
+            grid-area: email;
+         }
+         .phone {
+            grid-area: phone;
+         }
+         .password {
+            grid-area: password;
+         }
+
+         .profile-picture {
+            grid-area: pic;
+            .icon .icon-image {
+                border-radius: 99px;
+            }
+         }
+    }
+
+    .use-email-note {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
 }
 
 .misc-actions {
@@ -191,3 +255,66 @@ button {
   cursor: pointer;
   outline: inherit;
 }
+
+.primary-button {
+    height: 40px;
+    width: 170px;
+
+    color: #fff;
+    background-color: #1688FE;
+    border-radius: 4px;
+}
+
+.input {
+    position: relative; 
+    width: 100%;
+    height: 100%;
+
+    label.label {
+        position: absolute;
+        z-index: 1; 
+        top: -8px; 
+        display: inline-block;
+
+        padding: 0px 10px;
+
+        font-weight: 400;
+        font-size: 0.95em;
+
+        cursor: default;
+        background-color: #fff;
+        border-radius: 0 10px 10px 0;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 70%;
+    }
+
+   input.input-element {
+        flex-grow: 1;
+
+        width: 100%;
+        height: 100%;
+
+        border: 0;
+        border-radius: 5px;
+        border: 1px solid #E3E3E4;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:disabled {
+            color: inherit;
+            background-color: inherit;
+        }
+
+        &::placeholder {
+            color: var(--light-text);
+            opacity: 0.5;
+        }
+    }
+}
+
+

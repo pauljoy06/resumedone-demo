@@ -37,7 +37,39 @@ function Icon(props) {
     </div>
 }
 
+const Input = (props) => {
+    let inputElement;
+
+    let className = 'input';
+    if (props.className) {
+        className += ' ' + props.className;
+    }
+
+    inputElement = <div className={className}>
+        <input {...props}
+            className={`input-element input-display-text ${props.error && 'error'}`}
+            name={props.name}
+            value={props.value}
+        />
+
+        {props.postfixIconPath && <Icon path={props.postfixIconPath}
+            onClick={props.onPostfixClick}
+            className='postfix'
+            size={12}
+        />}
+    </div>
+
+    return <div className={className}>
+        {props.label && <label className='label'>
+            {props.label}
+            {props.required && <span className='required'> *</span>}
+        </label>}
+        {inputElement}
+    </div>
+}
+
 export {
     Icon,
     Sidebar,
+    Input,
 }

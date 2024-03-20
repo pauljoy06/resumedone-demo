@@ -1,7 +1,8 @@
 import './App.css';
-import {Icon, Sidebar} from './components';
+import {Icon, Sidebar, Input} from './components';
 
 import logo from './icons/paul.jpeg';
+import profilePic from './icons/profile_picture.png';
 import briefCase from './icons/brief_case.svg';
 
 function App() {
@@ -36,7 +37,45 @@ const PremiumAccountBanner = () => {
 
 const PersonalInformation = () => {
     return <div className='personal-information'>
-       Peronsal Information 
+        <div className='personal-information-title'>
+            Personal Information  
+        </div>
+        <form className='personal-information-form'>
+            <div className='first-name'>
+                <Input label='First Name'/>  
+            </div>
+            <div className='last-name'>
+                <Input label='Last Name'/>  
+            </div>
+            <div className='city'>
+                <Input label='City'/>  
+            </div>
+            <div className='postal-code'>
+                <Input label='Postal Code'/>  
+            </div>
+            <div className='address'>
+                <Input label='Address'/>  
+            </div>
+            <div className='email'>
+                <Input label='Email'/>  
+            </div>
+            <div className='phone'>
+                <Input label='phone'/>  
+            </div>
+            <div className='password'>
+                <Input label='Password'/>  
+            </div> 
+            <div className='profile-picture'>
+                <Icon image={profilePic} size={144}/>
+            </div>
+        </form>
+        <div className='use-email-note'>
+            Use this email to log in to your <a>resumedone.io</a>
+            account and receive notifications. 
+        </div>
+        <div className='submit-button'>
+            <button className='primary-button'>Submit</button>
+        </div>
     </div>
 }
 
